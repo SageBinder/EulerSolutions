@@ -124,7 +124,34 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Euler36.iml" filepath="$PROJECT_DIR$/Euler36.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler11/Euler11.iml" filepath="$PROJECT_DIR$/Euler11/Euler11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler12/Euler12.iml" filepath="$PROJECT_DIR$/Euler12/Euler12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler13/Euler13.iml" filepath="$PROJECT_DIR$/Euler13/Euler13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler14/Euler14.iml" filepath="$PROJECT_DIR$/Euler14/Euler14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler145/Euler145.iml" filepath="$PROJECT_DIR$/Euler145/Euler145.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler16/Euler16.iml" filepath="$PROJECT_DIR$/Euler16/Euler16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler17/Euler17.iml" filepath="$PROJECT_DIR$/Euler17/Euler17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler19/Euler19.iml" filepath="$PROJECT_DIR$/Euler19/Euler19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler20/Euler20.iml" filepath="$PROJECT_DIR$/Euler20/Euler20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler21/Euler21.iml" filepath="$PROJECT_DIR$/Euler21/Euler21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler22/Euler22.iml" filepath="$PROJECT_DIR$/Euler22/Euler22.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler23/Euler23.iml" filepath="$PROJECT_DIR$/Euler23/Euler23.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler24/Euler24.iml" filepath="$PROJECT_DIR$/Euler24/Euler24.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler26/Euler26.iml" filepath="$PROJECT_DIR$/Euler26/Euler26.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler27/Euler27.iml" filepath="$PROJECT_DIR$/Euler27/Euler27.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler28/Euler28.iml" filepath="$PROJECT_DIR$/Euler28/Euler28.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler29/Euler29.iml" filepath="$PROJECT_DIR$/Euler29/Euler29.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler30/Euler30.iml" filepath="$PROJECT_DIR$/Euler30/Euler30.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler31/Euler31.iml" filepath="$PROJECT_DIR$/Euler31/Euler31.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler32/Euler32.iml" filepath="$PROJECT_DIR$/Euler32/Euler32.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler35/Euler35.iml" filepath="$PROJECT_DIR$/Euler35/Euler35.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler36/Euler36.iml" filepath="$PROJECT_DIR$/Euler36/Euler36.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler37/Euler37.iml" filepath="$PROJECT_DIR$/Euler37/Euler37.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler39/Euler39.iml" filepath="$PROJECT_DIR$/Euler39/Euler39.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler40/Euler40.iml" filepath="$PROJECT_DIR$/Euler40/Euler40.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler42/Euler42.iml" filepath="$PROJECT_DIR$/Euler42/Euler42.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler46/Euler46.iml" filepath="$PROJECT_DIR$/Euler46/Euler46.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler48/Euler48.iml" filepath="$PROJECT_DIR$/Euler48/Euler48.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
@@ -218,6 +245,9 @@
       <properties />
       <listeners />
     </configuration>
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
   </component>
   <component name="masterDetails">
     <states>
