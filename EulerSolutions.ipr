@@ -150,6 +150,7 @@
       <module fileurl="file://$PROJECT_DIR$/Euler39/Euler39.iml" filepath="$PROJECT_DIR$/Euler39/Euler39.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler40/Euler40.iml" filepath="$PROJECT_DIR$/Euler40/Euler40.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler42/Euler42.iml" filepath="$PROJECT_DIR$/Euler42/Euler42.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler45/Euler44.iml" filepath="$PROJECT_DIR$/Euler45/Euler44.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler46/Euler46.iml" filepath="$PROJECT_DIR$/Euler46/Euler46.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler48/Euler48.iml" filepath="$PROJECT_DIR$/Euler48/Euler48.iml" />
     </modules>
