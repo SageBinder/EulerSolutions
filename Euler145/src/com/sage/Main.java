@@ -4,6 +4,7 @@ public class Main {
     public static boolean[] checked = new boolean[1000000000];
 
     public static void main(String[] args) {
+        long totalStartTime = System.nanoTime();
         long startTime = System.nanoTime();
         long stopTime;
         long averageTime;
@@ -28,7 +29,8 @@ public class Main {
             System.out.println("Average time: " + averageTime);
             startTime = stopTime;
         }
-        System.out.println(sum);
+        long totalStopTime = System.nanoTime();
+        System.out.println(sum + ", total run time (in nanoseconds): " + (totalStopTime - totalStartTime));
     }
 
     public static boolean isReversible(int n, int reverse) {
