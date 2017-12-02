@@ -170,6 +170,7 @@
     <dictionary name="Sage">
       <words>
         <w>hexagonals</w>
+        <w>pandigital</w>
       </words>
     </dictionary>
   </component>
