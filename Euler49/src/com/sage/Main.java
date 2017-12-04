@@ -7,7 +7,6 @@ public class Main {
         ArrayList<Integer> primes = generatePrimesUnder(10000);
         StringBuilder sb = new StringBuilder();
 
-        outerLoop:
         for(int i = 0; i < primes.size() - 1; i++) {
             for(int j = i + 1; j < primes.size(); j++) {
                 int difference = primes.get(j) - primes.get(i);
@@ -25,25 +24,6 @@ public class Main {
             }
         }
         System.out.println(sb.toString());
-    }
-
-    private static ArrayList<Integer> generatePrimesUnder(int n) {
-        ArrayList<Integer> primes = new ArrayList<>();
-        for(int i = 2; i < n; i++) {
-            if(isPrime(i)) {
-                primes.add(i);
-            }
-        }
-        return primes;
-    }
-
-    private static boolean isPrime(int num) {
-        if (num < 2) return false;
-        if (num == 2) return true;
-        if (num % 2 == 0) return false;
-        for (int i = 3; i * i <= num; i += 2)
-            if (num % i == 0) return false;
-        return true;
     }
 
     private static boolean allPermutations(int[] numbers) {
@@ -67,12 +47,31 @@ public class Main {
         return true;
     }
 
+    private static ArrayList<Integer> generatePrimesUnder(int n) {
+        ArrayList<Integer> primes = new ArrayList<>();
+        for(int i = 2; i < n; i++) {
+            if(isPrime(i)) {
+                primes.add(i);
+            }
+        }
+        return primes;
+    }
+
     private static boolean allPrime(int[] numbers) {
         for(int num : numbers) {
             if(!isPrime(num)) {
                 return false;
             }
         }
+        return true;
+    }
+
+    private static boolean isPrime(int num) {
+        if (num < 2) return false;
+        if (num == 2) return true;
+        if (num % 2 == 0) return false;
+        for (int i = 3; i * i <= num; i += 2)
+            if (num % i == 0) return false;
         return true;
     }
 }
