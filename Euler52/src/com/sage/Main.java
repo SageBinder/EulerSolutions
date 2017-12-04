@@ -1,7 +1,5 @@
 package com.sage;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         int smallestSameDigitNum;
@@ -29,12 +27,13 @@ public class Main {
         }
 
         int numLength = Integer.toString(numbers[0]).length();
-
-        for(int i = 0; i < numLength; i++) {
-            char currentDigit = Integer.toString(numbers[0]).charAt(i);
-            for(int j = 1; j < numbers.length; j++) {
-                if(!Integer.toString(numbers[j]).contains(currentDigit + "")) {
-                    return false;
+        for(int i = 0; i < numbers.length; i++) {
+            for(int j = 0; j < numLength; j++) {
+                char currentDigit = Integer.toString(numbers[i]).charAt(j);
+                for(int k = 0; k < numbers.length; k++) {
+                    if(!Integer.toString(numbers[k]).contains(currentDigit + "")) {
+                        return false;
+                    }
                 }
             }
         }
