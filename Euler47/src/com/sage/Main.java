@@ -40,25 +40,25 @@ public class Main {
     }
 
     public static boolean hasDistinctFactors(HashMap<String, Integer>[] factorsList) {
-        HashSet<String> keys = new HashSet<>();
+        HashSet<String> primesInFactorsList = new HashSet<>();
 
         for(HashMap<String, Integer> factors : factorsList) {
-            Set<String> set = factors.keySet();
-            for(String key : set) {
-                if(factors.get(key) > 0) {
-                    keys.add(key);
+            Set<String> primes = factors.keySet();
+            for(String prime : primes) {
+                if(factors.get(prime) > 0) {
+                    primesInFactorsList.add(prime);
                 }
             }
         }
 
-        for(String key : keys) {
-            ArrayList<Integer> values = new ArrayList<>();
+        for(String prime : primesInFactorsList) {
+            ArrayList<Integer> powers = new ArrayList<>();
             for(HashMap<String, Integer> factors : factorsList) {
-                if(factors.keySet().contains(key)) {
-                    if(values.contains(factors.get(key)) && factors.get(key) > 0) {
+                if(factors.keySet().contains(prime)) {
+                    if(powers.contains(factors.get(prime)) && factors.get(prime) > 0) {
                         return false;
                     } else {
-                        values.add(factors.get(key));
+                        powers.add(factors.get(prime));
                     }
                 }
             }
