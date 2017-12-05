@@ -166,6 +166,9 @@
       </item>
     </group>
   </component>
+  <component name="ProjectCodeStyleConfiguration">
+    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default copy" />
+  </component>
   <component name="ProjectDictionaryState">
     <dictionary name="Sage">
       <words>
@@ -291,6 +294,7 @@
       <module fileurl="file://$PROJECT_DIR$/Euler48/Euler48.iml" filepath="$PROJECT_DIR$/Euler48/Euler48.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler49/Euler49.iml" filepath="$PROJECT_DIR$/Euler49/Euler49.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler50/Euler50.iml" filepath="$PROJECT_DIR$/Euler50/Euler50.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler51/Euler51.iml" filepath="$PROJECT_DIR$/Euler51/Euler51.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler52/Euler52.iml" filepath="$PROJECT_DIR$/Euler52/Euler52.iml" />
     </modules>
   </component>
