@@ -297,6 +297,7 @@
       <module fileurl="file://$PROJECT_DIR$/Euler51/Euler51.iml" filepath="$PROJECT_DIR$/Euler51/Euler51.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler52/Euler52.iml" filepath="$PROJECT_DIR$/Euler52/Euler52.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler55/Euler55.iml" filepath="$PROJECT_DIR$/Euler55/Euler55.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler69/Euler69.iml" filepath="$PROJECT_DIR$/Euler69/Euler69.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler92/Euler92.iml" filepath="$PROJECT_DIR$/Euler92/Euler92.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler97/Euler97.iml" filepath="$PROJECT_DIR$/Euler97/Euler97.iml" />
     </modules>
