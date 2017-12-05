@@ -298,6 +298,7 @@
       <module fileurl="file://$PROJECT_DIR$/Euler52/Euler52.iml" filepath="$PROJECT_DIR$/Euler52/Euler52.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler55/Euler55.iml" filepath="$PROJECT_DIR$/Euler55/Euler55.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler92/Euler92.iml" filepath="$PROJECT_DIR$/Euler92/Euler92.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler97/Euler97.iml" filepath="$PROJECT_DIR$/Euler97/Euler97.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
