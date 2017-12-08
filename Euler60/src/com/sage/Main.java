@@ -10,11 +10,10 @@ public class Main {
 
     public static void main(String[] args) {
         int sum;
+        long totalStartTime = System.nanoTime();
 
         outer:
-        for(long i = generateNextPrime(1); ; i = generateNextPrime(i)) {
-            System.out.println("Checking " + i);
-
+        for(long i = generateNextPrime(1), loopStartTime = System.nanoTime(), c = 1, averageCounter = 1, printGap = 50000; ; i = generateNextPrime(i), c++) {
             HashSet<Pair<Integer, Integer>> pairs = allPrimesConcatInto(i);
             addPairsToComplementsList(pairs);
 
@@ -34,9 +33,28 @@ public class Main {
                     break outer;
                 }
             }
+
+            // Timing/printing code:
+            if(c % printGap == 0) {
+                long loopEndTime = System.nanoTime();
+                System.out.println("c = " + c + ", "
+                        + "Checking concatenation possibilities for prime " + i + ",\n"
+                        + "took " + (loopEndTime - loopStartTime) / 1000000000 + " seconds since last print "
+                        + "(" + (loopEndTime - loopStartTime) + " nanos), \n"
+                        + "total elapsed time so far: " + (loopEndTime - totalStartTime) / 1000000000 + " seconds "
+                        + "(" + (loopEndTime - totalStartTime) + " nanos), \n"
+                        + "average time per " + printGap + " primes so far: " + ((loopEndTime - totalStartTime) / 1000000000) / averageCounter + " seconds "
+                        + "(" + (loopEndTime - totalStartTime) / averageCounter + ") nanos.\n");
+                averageCounter++;
+                loopStartTime = System.nanoTime();
+            }
+            // --------------------
         }
 
-        System.out.println(sum);
+        long totalEndTime = System.nanoTime();
+        System.out.println("Answer: " + sum
+                + ", took " + (totalEndTime - totalStartTime) / 1000000000 + " seconds ("
+                + (totalEndTime - totalStartTime) + " nanos).");
     }
 
     private static int smallestNPrimeSetSum(int n, ArrayList<Integer> currSet) {
@@ -66,12 +84,12 @@ public class Main {
 
     private static HashSet<Integer> intersectionOfPrimeSets(ArrayList<Integer> keys) {
         HashSet<Integer> intersection = new HashSet<>();
+
         for(int i : keys) {
             if(primeConcatComplements.get(i) != null) {
                 intersection.addAll(primeConcatComplements.get(i));
             }
         }
-
         for(int i : keys) {
             if(primeConcatComplements.get(i) != null) {
                 intersection.retainAll(primeConcatComplements.get(i));
@@ -93,6 +111,7 @@ public class Main {
     private static HashSet<Pair<Integer, Integer>> allPrimesConcatInto(long n) {
         String nString = Long.toString(n);
         HashSet<Pair<Integer, Integer>> allPrimePairs = new HashSet<>();
+
         for(int i = 1; i < nString.length(); i++) {
             if(nString.charAt(i) == '0') { // This if statement prevents numbers like 1307 from from adding 13 and 7
                 continue;
@@ -105,6 +124,7 @@ public class Main {
                 allPrimePairs.add(new Pair<>(n2, n1));
             }
         }
+
         return allPrimePairs;
     }
 
