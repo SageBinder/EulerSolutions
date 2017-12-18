@@ -256,6 +256,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Euler102/Euler102.iml" filepath="$PROJECT_DIR$/Euler102/Euler102.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler11/Euler11.iml" filepath="$PROJECT_DIR$/Euler11/Euler11.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler12/Euler12.iml" filepath="$PROJECT_DIR$/Euler12/Euler12.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler13/Euler13.iml" filepath="$PROJECT_DIR$/Euler13/Euler13.iml" />
@@ -266,6 +267,7 @@
       <module fileurl="file://$PROJECT_DIR$/Euler18/Euler18.iml" filepath="$PROJECT_DIR$/Euler18/Euler18.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler19/Euler19.iml" filepath="$PROJECT_DIR$/Euler19/Euler19.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler20/Euler20.iml" filepath="$PROJECT_DIR$/Euler20/Euler20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Euler206/Euler206.iml" filepath="$PROJECT_DIR$/Euler206/Euler206.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler21/Euler21.iml" filepath="$PROJECT_DIR$/Euler21/Euler21.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler22/Euler22.iml" filepath="$PROJECT_DIR$/Euler22/Euler22.iml" />
       <module fileurl="file://$PROJECT_DIR$/Euler23/Euler23.iml" filepath="$PROJECT_DIR$/Euler23/Euler23.iml" />
