@@ -1,10 +1,9 @@
 package com.sage;
 
-import javafx.util.Pair;
-
 import java.util.ArrayList;
 
 public class Main {
+
     private static String triangleString = "-340,495,-153,-910,835,-947\n" +
             "-175,41,-421,-714,574,-645\n" +
             "-547,712,-352,579,951,-786\n" +
@@ -1006,34 +1005,114 @@ public class Main {
             "-651,433,11,-339,939,294\n" +
             "-965,-728,560,569,-708,-247\n";
 
-    static ArrayList<ArrayList<Pair<Integer, Integer>>> triangleList = new ArrayList<>();
+    private static class Point extends javafx.util.Pair<Integer, Integer> {
+
+        private Point(int key, int value) {
+            super(key, value);
+        }
+
+        private int getX() {
+            return this.getKey();
+        }
+
+        private int getY() {
+            return this.getValue();
+        }
+
+        private float slopeBetween(Point comparePoint) {
+            return ((float)this.getY() - (float)comparePoint.getY()) / ((float)this.getX() - (float)comparePoint.getX());
+        }
+    }
+
+    private static ArrayList<ArrayList<Point>> triangleList = new ArrayList<>();
 
     public static void main(String[] args) {
         int answer = 0;
 
         parseTriangleString();
-        for(ArrayList<Pair<Integer, Integer>> triangle : triangleList) {
-            Pair<Integer, Integer> point0 = triangle.get(0);
-            Pair<Integer, Integer> point1 = triangle.get(1);
-            Pair<Integer, Integer> point2 = triangle.get(2);
+        for(ArrayList<Point> triangle : triangleList) {
+            Point point0 = triangle.get(0);
+            Point point1 = triangle.get(1);
+            Point point2 = triangle.get(2);
 
-            float slope0 = ((float)point0.getValue() - (float)point1.getValue()) / ((float)point0.getKey() - (float)point1.getKey());
-            float slope1 = ((float)point1.getValue() - (float)point2.getValue()) / ((float)point1.getKey() - (float)point2.getKey());
-            float slope2 = ((float)point2.getValue() - (float)point0.getValue()) / ((float)point2.getKey() - (float)point0.getKey());
-
-            float intercept0 = -(slope0 * point0.getKey());
-            float intercept1 = -(slope1 * point1.getKey());
-            float intercept2 = -(slope2 * point2.getKey());
+            System.out.print("Checking " + point0.getX() + ", " + point0.getY() + "; " + point1.getX() + ", " + point1.getY() + "; " + point2.getX() + ", " + point2.getY());
+            if(triangleAroundZero(point0, point1, point2)) {
+                System.out.println(", it contains the origin.");
+                answer++;
+            } else {
+                System.out.println(", it does not contain the origin.");
+            }
         }
+
+        System.out.println("Answer: " + answer);
     }
 
-    public static boolean hasPositiveAndNegativeValues(float a, float b, float c) {
+    // This solution is utter trash
+    private static boolean triangleAroundZero(Point point0, Point point1, Point point2) {
+        if(point0.getY() == 0 || point0.getX() == 0
+                || point1.getY() == 0 || point1.getX() == 0
+                || point2.getY() == 0 || point2.getX() == 0) {
+            return true;
+        }
+
+        float slope0 = point0.slopeBetween(point1);
+        float slope1 = point1.slopeBetween(point2);
+        float slope2 = point2.slopeBetween(point0);
+
+        float yIntercept0 = point0.getY() - (slope0 * point0.getX());
+        float yIntercept1 = point1.getY() - (slope1 * point1.getX());
+        float yIntercept2 = point2.getY() - (slope2 * point2.getX());
+
+        if(!(isBetween(yIntercept0, point0.getY(), point1.getY())
+                || isBetween(yIntercept1, point1.getY(), point2.getY())
+                || isBetween(yIntercept2, point2.getY(), point0.getY()))) {
+            return false;
+        }
+
+        float xIntercept0 = -(yIntercept0 / slope0);
+        float xIntercept1 = -(yIntercept1 / slope1);
+        float xIntercept2 = -(yIntercept2 / slope2);
+
+        if(!(isBetween(xIntercept0, point0.getX(), point1.getX())
+                || isBetween(xIntercept1, point1.getX(), point2.getX())
+                || isBetween(xIntercept2, point2.getX(), point0.getX()))) {
+            return false;
+        }
+
+        ArrayList<Float> xInterceptsOnLine = new ArrayList<>();
+        ArrayList<Float> yInterceptsOnLine = new ArrayList<>();
+
+        if(isBetween(xIntercept0, point0.getX(), point1.getX())) {
+            xInterceptsOnLine.add(xIntercept0);
+        }
+        if(isBetween(xIntercept1, point1.getX(), point2.getX())) {
+            xInterceptsOnLine.add(xIntercept1);
+        }
+        if(isBetween(xIntercept2, point2.getX(), point0.getX())) {
+            xInterceptsOnLine.add(xIntercept2);
+        }
+
+        if(isBetween(yIntercept0, point0.getY(), point1.getY())) {
+            yInterceptsOnLine.add(yIntercept0);
+        }
+        if(isBetween(yIntercept1, point1.getY(), point2.getY())) {
+            yInterceptsOnLine.add(yIntercept1);
+        }
+        if(isBetween(yIntercept2, point2.getY(), point0.getY())) {
+            yInterceptsOnLine.add(yIntercept2);
+        }
+
+        return isBetween(0, xInterceptsOnLine.get(0), xInterceptsOnLine.get(1)) && isBetween(0, yInterceptsOnLine.get(0), yInterceptsOnLine.get(1));
 
     }
 
-    public static void parseTriangleString() {
+    private static boolean isBetween(float betweenNum, float bound1, float bound2) {
+        return !(betweenNum > Math.max(bound1, bound2) || betweenNum < Math.min(bound1, bound2));
+    }
+
+    private static void parseTriangleString() {
         StringBuilder sb = new StringBuilder();
-        ArrayList<Pair<Integer, Integer>> trianglePoints = new ArrayList<>();
+        ArrayList<Point> trianglePoints = new ArrayList<>();
 
         int x = 0, y;
         int xOrY = 0;
@@ -1045,7 +1124,7 @@ public class Main {
                     xOrY = 1;
                 } else {
                     y = Integer.parseInt(sb.toString());
-                    trianglePoints.add(new Pair<>(x, y));
+                    trianglePoints.add(new Point(x, y));
                     xOrY = 0;
                 }
                 sb = new StringBuilder();
@@ -1053,7 +1132,7 @@ public class Main {
             }
             if(c == '\n') {
                 y = Integer.parseInt(sb.toString());
-                trianglePoints.add(new Pair<>(x, y));
+                trianglePoints.add(new Point(x, y));
                 triangleList.add(trianglePoints);
 
                 trianglePoints = new ArrayList<>();
