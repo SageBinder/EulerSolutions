@@ -1103,7 +1103,6 @@ public class Main {
         }
 
         return isBetween(0, xInterceptsOnLine.get(0), xInterceptsOnLine.get(1)) && isBetween(0, yInterceptsOnLine.get(0), yInterceptsOnLine.get(1));
-
     }
 
     private static boolean isBetween(float betweenNum, float bound1, float bound2) {
