@@ -256,63 +256,10 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Euler102/Euler102.iml" filepath="$PROJECT_DIR$/Euler102/Euler102.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler11/Euler11.iml" filepath="$PROJECT_DIR$/Euler11/Euler11.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler116/Euler116.iml" filepath="$PROJECT_DIR$/Euler116/Euler116.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler12/Euler12.iml" filepath="$PROJECT_DIR$/Euler12/Euler12.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler13/Euler13.iml" filepath="$PROJECT_DIR$/Euler13/Euler13.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler14/Euler14.iml" filepath="$PROJECT_DIR$/Euler14/Euler14.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler145/Euler145.iml" filepath="$PROJECT_DIR$/Euler145/Euler145.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler16/Euler16.iml" filepath="$PROJECT_DIR$/Euler16/Euler16.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler17/Euler17.iml" filepath="$PROJECT_DIR$/Euler17/Euler17.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler18/Euler18.iml" filepath="$PROJECT_DIR$/Euler18/Euler18.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler19/Euler19.iml" filepath="$PROJECT_DIR$/Euler19/Euler19.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler20/Euler20.iml" filepath="$PROJECT_DIR$/Euler20/Euler20.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler206/Euler206.iml" filepath="$PROJECT_DIR$/Euler206/Euler206.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler21/Euler21.iml" filepath="$PROJECT_DIR$/Euler21/Euler21.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler22/Euler22.iml" filepath="$PROJECT_DIR$/Euler22/Euler22.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler23/Euler23.iml" filepath="$PROJECT_DIR$/Euler23/Euler23.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler24/Euler24.iml" filepath="$PROJECT_DIR$/Euler24/Euler24.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler26/Euler26.iml" filepath="$PROJECT_DIR$/Euler26/Euler26.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler27/Euler27.iml" filepath="$PROJECT_DIR$/Euler27/Euler27.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler28/Euler28.iml" filepath="$PROJECT_DIR$/Euler28/Euler28.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler29/Euler29.iml" filepath="$PROJECT_DIR$/Euler29/Euler29.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler30/Euler30.iml" filepath="$PROJECT_DIR$/Euler30/Euler30.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler31/Euler31.iml" filepath="$PROJECT_DIR$/Euler31/Euler31.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler32/Euler32.iml" filepath="$PROJECT_DIR$/Euler32/Euler32.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler33/Euler33.iml" filepath="$PROJECT_DIR$/Euler33/Euler33.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler34/Euler34.iml" filepath="$PROJECT_DIR$/Euler34/Euler34.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler35/Euler35.iml" filepath="$PROJECT_DIR$/Euler35/Euler35.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler36/Euler36.iml" filepath="$PROJECT_DIR$/Euler36/Euler36.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler37/Euler37.iml" filepath="$PROJECT_DIR$/Euler37/Euler37.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler38/Euler38.iml" filepath="$PROJECT_DIR$/Euler38/Euler38.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler39/Euler39.iml" filepath="$PROJECT_DIR$/Euler39/Euler39.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler40/Euler40.iml" filepath="$PROJECT_DIR$/Euler40/Euler40.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler41/Euler41.iml" filepath="$PROJECT_DIR$/Euler41/Euler41.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler42/Euler42.iml" filepath="$PROJECT_DIR$/Euler42/Euler42.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler43/Euler43.iml" filepath="$PROJECT_DIR$/Euler43/Euler43.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler44/Euler44.iml" filepath="$PROJECT_DIR$/Euler44/Euler44.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler45/Euler45.iml" filepath="$PROJECT_DIR$/Euler45/Euler45.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler46/Euler46.iml" filepath="$PROJECT_DIR$/Euler46/Euler46.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler47/Euler47.iml" filepath="$PROJECT_DIR$/Euler47/Euler47.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler48/Euler48.iml" filepath="$PROJECT_DIR$/Euler48/Euler48.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler49/Euler49.iml" filepath="$PROJECT_DIR$/Euler49/Euler49.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler50/Euler50.iml" filepath="$PROJECT_DIR$/Euler50/Euler50.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler51/Euler51.iml" filepath="$PROJECT_DIR$/Euler51/Euler51.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler52/Euler52.iml" filepath="$PROJECT_DIR$/Euler52/Euler52.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler53/Euler53.iml" filepath="$PROJECT_DIR$/Euler53/Euler53.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler549/Euler549.iml" filepath="$PROJECT_DIR$/Euler549/Euler549.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler55/Euler55.iml" filepath="$PROJECT_DIR$/Euler55/Euler55.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler60/Euler60.iml" filepath="$PROJECT_DIR$/Euler60/Euler60.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler63/Euler63.iml" filepath="$PROJECT_DIR$/Euler63/Euler63.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler67/Euler67.iml" filepath="$PROJECT_DIR$/Euler67/Euler67.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler69/Euler69.iml" filepath="$PROJECT_DIR$/Euler69/Euler69.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler92/Euler92.iml" filepath="$PROJECT_DIR$/Euler92/Euler92.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler97/Euler97.iml" filepath="$PROJECT_DIR$/Euler97/Euler97.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Euler99/Euler99.iml" filepath="$PROJECT_DIR$/Euler99/Euler99.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Solutions/Solutions.iml" filepath="$PROJECT_DIR$/Solutions/Solutions.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="PropertiesComponent">
