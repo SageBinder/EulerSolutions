@@ -19,7 +19,6 @@ public class Main {
             }
 
             for(int j = i; j < primes.size(); j++) {
-
                 int primeJ = primes.get(j);
                 System.out.println("Checking primes " + primeI + " * " + primeJ);
 
