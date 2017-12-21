@@ -12,16 +12,16 @@ public class Main {
 
         int nSqrt = (int)Math.ceil(Math.sqrt(n));
         int answer = 0;
-        outerLoop:
         for(int i = 0; i < primes.size(); i++) {
+            int primeI = primes.get(i);
+            if(primeI > nSqrt) {
+                break;
+            }
+
             for(int j = i; j < primes.size(); j++) {
-                int primeI = primes.get(i);
+
                 int primeJ = primes.get(j);
                 System.out.println("Checking primes " + primeI + " * " + primeJ);
-
-                if(primeI > nSqrt) {
-                    break outerLoop;
-                }
 
                 int composite = primeI * primeJ;
                 if(composite < n) {
