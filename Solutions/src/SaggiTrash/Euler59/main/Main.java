@@ -27,8 +27,6 @@ public class Main {
         }
 
         Path decryptFile = Paths.get("Solutions", "src", "SaggiTrash", "Euler59", "resources", "decrypted.txt");
-        ArrayList<String> decryptions = new ArrayList<>();
-
         System.out.println("Writing to file: " + decryptFile.toAbsolutePath().toString());
 
         try {
