@@ -52,6 +52,12 @@
       <projects_view />
     </option>
   </component>
+  <component name="HydraSettings">
+    <option name="hydraStorePath" value="C:\Users\Sage\IdeaProjects\EulerSolutions\.hydra\idea" />
+    <option name="noOfCores" value="2" />
+    <option name="projectRoot" value="C:\Users\Sage\IdeaProjects\EulerSolutions" />
+    <option name="sourcePartitioner" value="auto" />
+  </component>
   <component name="InspectionProjectProfileManager">
     <profile version="1.0">
       <option name="myName" value="Project Default" />
@@ -272,7 +278,7 @@
       <module fileurl="file://$PROJECT_DIR$/Solutions/Solutions.iml" filepath="$PROJECT_DIR$/Solutions/Solutions.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" default="false" project-jdk-name="10 (1)" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="PropertiesComponent">
@@ -366,6 +372,39 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="JavaFX">
+      <CLASSES>
+        <root url="file://C:/Program Files/Java/javafx-sdk-11.0.1/lib" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://C:/Program Files/Java/javafx-sdk-11.0.1/lib" />
+      </SOURCES>
+      <jarDirectory url="file://C:/Program Files/Java/javafx-sdk-11.0.1/lib" recursive="false" />
+      <jarDirectory url="file://C:/Program Files/Java/javafx-sdk-11.0.1/lib" recursive="false" type="SOURCES" />
+    </library>
+    <library name="scala-sdk-2.12.7" type="Scala">
+      <properties>
+        <compiler-classpath>
+          <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.7.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.7.jar" />
+          <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.7.jar" />
+        </compiler-classpath>
+      </properties>
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.7.jar!/" />
+        <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.7.jar!/" />
+        <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.7-sources.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.12.7-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.12.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES />
+    </library>
   </component>
   <component name="masterDetails">
     <states>
